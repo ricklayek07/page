@@ -4,8 +4,7 @@
 </head>
 <body>
 	<center>
-    	<form action="" method="post">
-        	{% csrf_token %} 
+    	<form action="" method="post"> 
 	<h3>Signup Here</h3>
         	<label for="username">Username</label>
         	<input type="text" placeholder="Username" name="username"> <br /><br/>
@@ -16,7 +15,7 @@
                 <label for="password2">Confrom Password</label>
         	<input type="password" placeholder="Confrom Password" name="password2"> <br /><br/>
         	<button type="submit">Signup</button><br/><br/>
-                <a href="{% url 'login' %}">Already Registered Candidates Login Here.</a><br/>
+                <a href="{% url 'index' %}">Already Registered Candidates Login Here.</a><br/>
    	</form>
 	</center>
 </body>
