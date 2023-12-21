@@ -11,7 +11,6 @@
   <body>
     <div class="container">
       <form action=""method ='post'>
-        {% csrf_token %} 
         <div class="title">Login</div>
         <div class="input-box underline">
           <input type="text" placeholder="Enter Username" id="username" name="username" required />
@@ -25,7 +24,7 @@
           <input type="submit" name="Home" value="Continue" />
         </div>
         <div class="twitter">
-          <a href="{% url 'signup' %}"><i class="fab fa-facebook-f"></i>Create an Account</a>
+          <a href="{% url 'Signup' %}"><i class="fab fa-facebook-f"></i>Create an Account</a>
         </div>
         
       </form>
